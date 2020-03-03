@@ -10,7 +10,7 @@ exports.start = {
     auth : false,
     handler : function (request, reply) {
 
-        reply("DiCD working!!!");
+        reply("CICD working!!!");
     }
 };
 
