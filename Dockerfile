@@ -4,5 +4,5 @@ WORKDIR /home/nodejs/app
 COPY package.json .
 RUN npm install
 COPY . .
-CMD [“node.js”, “index.js”]
+CMD [“node”, “index.js”]
 EXPOSE 51005
