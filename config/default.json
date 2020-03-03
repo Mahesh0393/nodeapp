@@ -7,18 +7,8 @@
     },
     "mysql" : {
       "name": "backend_demo",
-      "username": "root",
-      "password": "password",
-      "options": {
-        "host": "localhost",
-        "port": 3306,
-        "dialect": "mysql",
-        "logging": true,
-        "underscored": true,
-        "timestamps": false,
-        "define": {
-          "underscored": true,
-          "timestamps": false
+      "host": "localhost",
+        "port": 3306
         }
       }
     }
