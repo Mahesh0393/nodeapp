@@ -5,7 +5,7 @@ services:
     restart: always
     build: ./
     ports:
-      - "8080:51005"
+      - "5000:51005"
     volumes:
       - .:/home/nodejs/app
     links:
