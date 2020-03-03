@@ -5,5 +5,5 @@ COPY package.json .
 RUN npm install
 COPY . .
 RUN npm -v
-CMD [“node.js”, “index.js”]
+CMD [“index.js”]
 EXPOSE 51005
