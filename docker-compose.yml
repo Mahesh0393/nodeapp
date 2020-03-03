@@ -11,7 +11,7 @@ services:
   mongo:
     image: mongo
     volumes:
-      - my-datavolume:/var/lib/mongo
+      - datavolume-mongo:/var/lib/mongo
     ports:
       - "27017:27017"
   mysql:
@@ -19,10 +19,11 @@ services:
         - mysql-server.env
       image: mysql
       volumes:
-        - my-datavolume:/var/lib/mysql
+        - datavolume-mysql:/var/lib/mysql
       ports:
        - "3306:3306"
 volumes:
-  my-datavolume:
+  datavolume-mysql:
+  datavolume-mongo:  
   
       
