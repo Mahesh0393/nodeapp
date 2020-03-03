@@ -17,7 +17,7 @@ services:
   mysql:
       env_file:
         - mysql-server.env
-      image: mysql5.7
+      image: mysql:5.7
       volumes:
         - datavolume-mysql:/var/lib/mysql
       ports:
