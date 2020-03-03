@@ -6,11 +6,11 @@
       "port": 27017
     },
     "mysql" : {
-      "name": "backend_demo",
-      "username": "root",
-      "password": "password",
+      "name": "staging_excellence",
+      "username": "sachin.khairnar",
+      "password": "exstaging@#",
       "options": {
-        "host": "localhost",
+        "host": "192.168.120.143",
         "port": 3306,
         "dialect": "mysql",
         "logging": true,
