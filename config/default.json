@@ -7,10 +7,10 @@
     },
     "mysql" : {
       "name": "staging_excellence",
-      "username": "sachin.khairnar",
-      "password": "exstaging@#",
+      "username": "root",
+      "password": "password",
       "options": {
-        "host": "192.168.120.143",
+        "host": "localhost",
         "port": 3306,
         "dialect": "mysql",
         "logging": true,
