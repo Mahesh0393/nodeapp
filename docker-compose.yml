@@ -14,6 +14,6 @@ services:
     mysql:
       env_file:
         - mysql-server.env
-      image:mysql
+      image: mysql
       ports:
       - "3306:3306"
