@@ -22,7 +22,7 @@ services:
     ports:
       - "27017:27017"
   mysql:
-    container_name: mysql
+    container_name: mysqlhost
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: password

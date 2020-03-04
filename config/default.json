@@ -10,8 +10,8 @@
       "username": "root",
       "password": "password",
       "options": {
-        "host": "%",
-        "port": 51006,
+        "host": "mysqlhost",
+        "port": 3306,
         "dialect": "mysql",
         "logging": true,
         "underscored": true,
