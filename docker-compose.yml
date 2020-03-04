@@ -23,8 +23,12 @@ services:
       - "27017:27017"
   mysql:
     container_name: mysql
-    env_file:
-      - mysql-server.env
+    environment:
+      MYSQL_ROOT_PASSWORD:password
+      MYSQL_DATABASE:backend_demo
+      MYSQL_USER:root
+      MYSQL_PASSWORD:password
+      MYSQL_ROOT_HOST=%
     image: mysql
     volumes:
       - datavolume-mysql:/var/lib/mysql
