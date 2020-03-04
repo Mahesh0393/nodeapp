@@ -5,6 +5,5 @@ openssl req \
   -nodes \
   -x509 \
   -subj "/C=US/ST=CA/L=SF/O=Docker-demo/CN=app.example.org" \
-  -keyout app.example.org.key \
-  -out app.example.org.cert
-  
+  -keyout localhost.key \
+  -out localhost.cert
