@@ -7,7 +7,7 @@
     },
     "mysql" : {
       "name": "backend_demo",
-      "username": "demo",
+      "username": "root",
       "password": "password",
       "options": {
         "host": "mysqlhost",
