@@ -13,7 +13,7 @@ services:
       - ./localhost.key:/etc/nginx/conf.d/localhost.key;
     links:
       - mongo
-      - mysql
+      - mysqlhost
   mongo:
     container_name: mongo
     image: mongo
@@ -21,7 +21,7 @@ services:
       - datavolume-mongo:/var/lib/mongo
     ports:
       - "27017:27017"
-  mysql:
+  mysqlhost:
     container_name: mysqlhost
     image: mysql:5.7
     environment:
@@ -32,7 +32,7 @@ services:
     volumes:
       - datavolume-mysql:/var/lib/mysql
     ports:
-       - "51006:3306"
+       - "3306:3306"
 volumes:
   datavolume-mysql:
   datavolume-mongo:  
