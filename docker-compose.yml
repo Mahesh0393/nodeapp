@@ -23,6 +23,8 @@ services:
       - "27017:27017"
   mysql:
     container_name: mysql
+    env_file:
+        - mysql-server.env
     image: mysql:5.7
     volumes:
       - datavolume-mysql:/var/lib/mysql
