@@ -24,8 +24,8 @@ services:
   mysql:
     container_name: mysql
     env_file:
-        - mysql-server.env
-    image: mysql:5.6
+      - mysql-server.env
+    image: mysql-57-centos7
     volumes:
       - datavolume-mysql:/var/lib/mysql
     ports:
