@@ -9,18 +9,11 @@ var fs            = require('fs');
 var datamodel        = {};
 // initialize database connection
 
-    // var sequelize = new Sequelize(
-    //     config.database.mysql.name,
-    //     config.database.mysql.username,
-    //     config.database.mysql.password,
-    //     config.database.mysql.options
-    // );
-
-
     var sequelize = new Sequelize(
-        backend_demo,
-        root,
-        password
+        config.database.mysql.name,
+        config.database.mysql.username,
+        config.database.mysql.password,
+        config.database.mysql.options
     );
 
     sequelize.authenticate()
