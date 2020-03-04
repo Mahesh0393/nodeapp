@@ -11,7 +11,7 @@
       "password": "password",
       "options": {
         "host": "mysql",
-        "port": 3306,
+        "port": 51006,
         "dialect": "mysql",
         "logging": true,
         "underscored": true,
