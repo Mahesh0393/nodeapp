@@ -2,6 +2,7 @@
 version: "2"
 services:
   web:
+    container_name: docker-node-mongo
     build: .
     ports:
     - "51005:51005"
@@ -14,16 +15,18 @@ services:
     - mongo
     - mysql
   mongo:
+    container_name: mongo
     image: mongo
     volumes:
       - datavolume-mongo:/var/lib/mongo
     ports:
       - "27017:27017"
   mysql:
-      image: mysql:5.7
-      volumes:
-        - datavolume-mysql:/var/lib/mysql
-      ports:
+    container_name: mysql
+    image: mysql:5.7
+    volumes:
+      - datavolume-mysql:/var/lib/mysql
+    ports:
        - "3306:3306"
 volumes:
   datavolume-mysql:
