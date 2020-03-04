@@ -10,9 +10,9 @@
       "username": "root",
       "password": "password",
       "options": {
-        "host": "0.0.0.0",
+        "host": "%",
         "port": 51006,
-        "dialect": "Sequelize",
+        "dialect": "mysql",
         "logging": true,
         "underscored": true,
         "timestamps": false,
