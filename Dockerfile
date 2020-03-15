@@ -1,8 +1,10 @@
 FROM node:8
 RUN apt-get update
 RUN apt-get install -y nginx
-RUN service nginx restart && service nginx restart
 RUN mkdir -p /home/nodejs/app
+RUN mkdir -p /etc/ssl
+RUN service nginx stop && RUN service nginx start
+RUN service nginx status
 WORKDIR /home/nodejs/app
 COPY package.json /home/nodejs/app
 RUN npm install
