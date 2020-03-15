@@ -12,7 +12,6 @@ RUN npm install
 COPY . /home/nodejs/app
 RUN node -v
 CMD ["service nginx restart"]
-RUN service nginx status
 CMD ["node", "index.js"]
 EXPOSE 51005
 EXPOSE 80
