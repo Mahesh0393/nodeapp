@@ -4,7 +4,6 @@ RUN apt-get install -y nginx
 RUN mkdir -p /home/nodejs/app
 RUN mkdir -p /etc/ssl
 RUN service nginx start
-RUN service nginx status
 WORKDIR /home/nodejs/app
 COPY package.json /home/nodejs/app
 RUN npm install
