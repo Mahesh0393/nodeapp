@@ -11,7 +11,7 @@ RUN npm install
 COPY . /home/nodejs/app
 RUN node -v
 CMD ["node", "index.js"]
-CMD [service nginx start]
+CMD service nginx start
 EXPOSE 51005
 EXPOSE 80
 EXPOSE 443
