@@ -10,8 +10,8 @@ services:
     - "443:443"
     volumes:
       - ./default:/etc/nginx/sites-available/default
-      - ./ssl/fullchain.pem:/etc/ssl/fullchain.pem # managed by Certbot
-      - ./ssl/privkey.pem:/etc/ssl/privkey.pem # managed by Certbot
+#     - ./ssl/fullchain.pem:/etc/ssl/fullchain.pem
+#      - ./ssl/privkey.pem:/etc/ssl/privkey.pem
     links:
       - mongo
       - mysqlhost

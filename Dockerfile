@@ -3,6 +3,8 @@ RUN apt-get update
 RUN apt-get install -y nginx && service nginx restart
 RUN mkdir -p /home/nodejs/app
 RUN mkdir -p /etc/ssl
+COPY ./ssl/fullchain.pem /etc/ssl
+COPY ./ssl/privkey.pem /etc/ssl
 WORKDIR /home/nodejs/app
 COPY package.json /home/nodejs/app
 RUN npm install
