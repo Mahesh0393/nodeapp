@@ -8,7 +8,7 @@ COPY package.json /home/nodejs/app
 RUN npm install
 COPY . /home/nodejs/app
 RUN node -v
-RUN service nginx status
+RUN service nginx restart && service nginx status
 CMD ["node", "index.js"]
 EXPOSE 51005
 EXPOSE 80
