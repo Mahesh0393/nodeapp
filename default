@@ -72,8 +72,8 @@ server {
 
     listen [::]:443 ssl ipv6only=on; # managed by Certbot
     listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/node.devopskloud.tech/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/node.devopskloud.tech/privkey.pem; # managed by Certbot
+    ssl_certificate /etc/ssl/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/ssl/privkey.pem; # managed by Certbot
 
 }
 
