@@ -6,9 +6,10 @@ services:
     build: .
     ports:
     - "51005:51005"
-    - "8181:443"
+    - "80:80"
+    - "443:443"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./default:/etc/nginx/sites-available/default
     links:
       - mongo
       - mysqlhost
