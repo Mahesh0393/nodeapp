@@ -12,7 +12,7 @@ RUN npm install
 COPY . /home/nodejs/app
 RUN node -v
 CMD ["node", "index.js"]
-ENTRYPOINT ["service nginx start"]
+ENTRYPOINT ["/bin/bash", "-c", "service nginx start"]
 EXPOSE 51005
 EXPOSE 80
 EXPOSE 443
