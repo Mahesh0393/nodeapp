@@ -11,8 +11,8 @@ COPY package.json /home/nodejs/app
 RUN npm install
 COPY . /home/nodejs/app
 RUN node -v
-CMD ["node", "index.js"]
 ENTRYPOINT ["/bin/bash", "-c", "service nginx start"]
+CMD ["node", "index.js"]
 EXPOSE 51005
 EXPOSE 80
 EXPOSE 443
